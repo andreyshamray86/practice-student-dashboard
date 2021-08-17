@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <title>Student Dashboard</title>
@@ -100,8 +100,6 @@
           <div class="header__user">
             <div class="header__user-messages">
               <img src="./images/message-icon.png" alt="" />
-            </div>
-            <div class="header__user-messages">
               <img src="./images/notification-icon.png" alt="" />
             </div>
             <div class="header__user-info">
@@ -121,11 +119,109 @@
         <main class="content">
           <div class="content__profile">
             <div class="programs">
-              <div class="programs__item"></div>
-              <div class="programs__item"></div>
+              <span class="customize">Customize</span>
+              <h3 class="programs__title">Active Programs</h3>
+              <div class="line-horizontal"></div>
+              <div class="programs__item">
+                <div class="programs__item-uni">
+                  <div class="image">
+                    <img src="./images/university-logo1.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <span>Master of computer science</span>
+                    <p>University of Upstate at Brookstone</p>
+                  </div>
+                </div>
+                <div class="programs__item-grades">
+                  <div class="assignments">
+                    <span>1</span>
+                    <p>
+                      Overdue<br />
+                      Assignments
+                    </p>
+                  </div>
+                  <div class="absenses">
+                    <span>5</span>
+                    <p>
+                      Remaining<br />
+                      Absenses
+                    </p>
+                  </div>
+                  <div class="average">
+                    <span>A-</span>
+                    <p>
+                      Academic<br />
+                      Average
+                    </p>
+                  </div>
+                  <div class="assignments">
+                    <img src="./images/progressbar1.png" alt="" />
+                    <p>Completion</p>
+                  </div>
+                </div>
+              </div>
+              <div class="programs__item">
+                <div class="programs__item-uni">
+                  <div class="image">
+                    <img src="./images/university-logo1.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <span>Certificate UX/UI design</span>
+                    <p>Academy of Art and Technology at Dursburg</p>
+                  </div>
+                </div>
+                <div class="programs__item-grades">
+                  <div class="assignments">
+                    <span>0</span>
+                    <p>
+                      Overdue<br />
+                      Assignments
+                    </p>
+                  </div>
+                  <div class="absenses">
+                    <span>6</span>
+                    <p>
+                      Remaining<br />
+                      Absenses
+                    </p>
+                  </div>
+                  <div class="average">
+                    <span>--</span>
+                    <p>
+                      Academic<br />
+                      Average
+                    </p>
+                  </div>
+                  <div class="assignments">
+                    <img src="./images/progressbar2.png" alt="" />
+                    <p>Completion</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="sessions">
-              <div class="sessions__detailed"></div>
+              <div class="sessions__detailed">
+                <img
+                  class="sessions__detailed-checkbox"
+                  src="./images/checked-box.png"
+                  alt=""
+                />
+                <img src="./images/study-image.png" alt="" />
+                <div class="sessions__detailed-info">
+                  <div class="title">
+                    <h5>UX Research - Week 3</h5>
+                    <p>Certificate UX/UI design</p>
+                    <span>In Progress</span>
+                  </div>
+                  <div class="join">
+                    <p>
+                      08
+                      <span>April</span>
+                    </p>
+                    <span>Join Now</span>
+                  </div>
+                </div>
+              </div>
               <div class="sessions__upcoming"></div>
             </div>
           </div>

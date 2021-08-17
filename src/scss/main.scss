@@ -10,13 +10,11 @@
     &__dashboard {
         max-width: 240px;
         height: 100%;
-        border: 1px solid black;
         background-color: $headline;
     }
     &__content {
         max-width: 1200px;
         max-width: 100%;
-        border: 1px solid black;
         background-color: $background;
     }
 }
@@ -227,14 +225,12 @@
     grid-gap: 25px;
     padding: 0 40px;
     height: calc(100% - 170px);
-    border: 1px solid green;
     &__profile {
         width: 787px;
         height: 695px;
-        border: 1px solid red;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
     &__messaging {
         width: 310px;
@@ -244,15 +240,14 @@
 }
 
 .programs {
-    height: 305px;
-    border: 1px solid blue;
     background-color: #fff;
     position: relative;
     border-radius: 20px;
-    padding: 25px;
+    padding: 25px 25px 25px 25px;
+    margin-bottom: 26px;
     &__title {
         display: inline-block;
-        margin-bottom: 23px;
+        margin-bottom: 10px;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
@@ -282,7 +277,7 @@
         display: flex;
         align-items: center;
         height: 104px;
-        margin-bottom: 44px;
+        margin-bottom: 10px;
         &-uni {
             width: 285px;
             display: flex;
@@ -364,19 +359,14 @@
     }
     .line-horizontal {
         width: 737px;
-        top: 191px;
+        top: 163px;
         left: 23px;
     }
 }
 
 .sessions {
-    width: 100%;
-    height: 363px;
-    border: 1px solid blue;
     display: flex;
-    justify-content: space-between;
     &__detailed {
-        border: 1px solid brown; 
         height: 305px;
         width: 336px;
         background-color: #fff;
@@ -384,9 +374,10 @@
         justify-content: center;
         align-items: center;
         position: relative;
+        border-radius: 20px;
         &-info {
             position: absolute;
-            bottom: -32px;
+            bottom: -52px;
             z-index: 5;
             width: 270px;
             padding: 20px;
@@ -439,6 +430,7 @@
                 justify-content: space-between;
                 margin-left: 14px;
                 p {
+                    font-family: 'MuseoModerno', cursive;
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 700;
@@ -447,6 +439,7 @@
                     text-transform: uppercase;
                     text-align: right;
                     span {
+                        font-family: 'Roboto', sans-serif;
                         display: block;
                         line-height: 8px;
                         font-size: 10px;
@@ -470,10 +463,145 @@
         }
     }
     &__upcoming {
-        border: 1px solid brown; 
+        position: relative;
         height: 100%;
-        width: 425px;
+        width: 375px;
         background-color: #fff;
+        padding: 26px 33px 0 24px;
+        border-radius: 20px;
+        margin-left: 25px;
+        &-title {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 19px;
+            color: $headline;
+            margin-bottom: 28px;
+        }
+        .calendar {
+            display: flex;
+            flex-direction: column;
+            &__subtitle {
+                margin-bottom: 15px;
+                p {
+                    display: inline-block;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 17px;
+                    color: #65708D;
+    
+                }
+                &-date {
+                    margin-right: 51px;
+                }
+                &-class {
+                    margin-right: 170px;
+                }
+            }
+            &__item {
+                display: flex;
+                align-items: center;
+                height: 48px;
+                margin-bottom: 27px;
+                .date {
+                    width: 54px;
+                    .weekday {
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 12px;
+                        color: $purple;
+                        text-align: center;
+                    }
+                    .day {
+                        font-family: 'MuseoModerno', cursive;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 21px;
+                        color: $text;
+                        text-align: center;
+                    }
+                    .month {
+                        font-size: 10px;
+                        font-style: normal;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        line-height: 11px;
+                        color: $text;
+                        text-align: center;
+                    }
+                }
+                
+                
+                .lesson {
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-left: 30px;
+                    &__info {
+                        width: 198px;
+                    }
+                    &__info-title {
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 14px;
+                        color: $headline;
+                    }
+                    &__info-subtitle {
+                        font-size: 11px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 14px;
+                        color: $text;
+                    }
+                    &-active {
+                        width: 293px;
+                        box-shadow: 0px 14px 20px 0px rgba(0, 0, 0, 0.1);
+                        background-color: #FAFAFF;
+                        border-radius: 10px;
+                        padding: 16px 12px 16px 12px;
+                        margin-left: 26px;
+                        justify-content: flex-start;
+                    }
+                }
+                span {
+                    display: inline;
+                    width: 75px;
+                    background-color: #E7E7FF;
+                    font-size: 9px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 11px;
+                    color: $headline;
+                    height: max-content;
+                    padding: 5px 7px;
+                    border-radius: 11px;
+                    text-align: center;
+                }
+            }
+        }
+        &-bottom {
+            position: absolute;
+            bottom: 19px;
+            right: 44px;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 17px;
+            color: $purple;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            background: url('../images/bubbles-horiz.png') center center no-repeat;
+            top: 35px;
+            right: 29px;
+            width: 22px;
+            height: 4px;
+        }
+
     }
 }
 

@@ -234,8 +234,197 @@
     }
     &__messaging {
         width: 310px;
-        border: 1px solid red;
         background-color: #fff;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        overflow: hidden;
+    }
+    .messaging {
+        &__header {
+            background-color: #FAFAFF;
+            display: flex;
+            align-items: center;
+            height: 57px;
+            position: relative;
+            padding: 0 16px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom: 1px solid #EEEEEE;
+            &-title {
+                margin-left: 13px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 19px;
+                color: $headline;
+            }
+            &-photo {
+                width: 30px;
+                height: 30px;
+            }
+            &-search {
+                height: 16px;
+                margin-left: 33px;
+            }
+            &-edit {
+                height: 18px;
+                margin-left: 20px;
+            }
+            &-bubbles {
+                height: 3px;
+                margin-left: 17px;
+            }
+            &-arrow {
+                width: 16px;
+                margin-left: 23px;
+            }
+            &-online {
+                position: absolute;
+                top: 34px;
+                left: 35px;
+                width: 10px;
+            }
+        }
+        &__friends {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 15px 16px 0 16px;
+            width: 317px;
+            margin-bottom: 41px;
+            &-add {
+                width: 50px;
+                height: 50px;
+                background-color: #E3E2E5;
+                border-radius: 50%;
+                position: relative;
+                .plus {
+                    position: absolute;
+                    top: calc(50% - 8px);
+                    left: calc(50% - 8px);
+                }
+            }
+            &-person {
+                .image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 46px;
+                    height: 46px;
+                    // padding: 1px;
+                    background-color: white;
+                    border: 2px solid #5855D6;
+                    border-radius: 50%;
+                }
+                img {
+                    &:last-of-type {
+                        height: 40px;
+                    }
+                }
+            }
+            span {
+                display: block;
+                margin-top: 2px;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 14px;
+                color: #77838F;
+                text-align: center;
+            }
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            padding: 0 15px;
+            .messaging__item{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                margin-bottom: 42px;
+                position: relative;
+                &-image {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    width: 55px;
+                    height: 55px;
+                    position: relative;
+                    span {
+                        position: absolute;
+                        bottom: -7px;
+                        right: -5px;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 12px;
+                        color: $purple;
+                    }
+                }
+                &-content {
+                    width: 160px;
+                    margin-left: 14px;
+                    h5 {
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 16px;
+                        color: $headline;
+                    }
+                    p {
+                        margin-top: 5px;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 16px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        color: $text;
+                    }
+                }
+                &-time {
+                    width: 50px;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 12px;
+                    color: #77838F;
+                    text-align: right;
+                }
+                &-amount {
+                    position: absolute;
+                    bottom: 4px;
+                    right: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 25px;
+                    height: 25px;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 17px;
+                    color: #fff;
+                    background-color: $purple;
+                    border-radius: 50%;
+                }
+                &:nth-child(2) {
+                    img {
+                        width: 25px;
+                        height: 25px;
+                        margin-bottom: 5px;
+                    }
+                }
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+                .line-horizontal {
+                    width: 280px;
+                    top: 75px;
+                    left: 0;
+                }
+            }
+        }
     }
 }
 

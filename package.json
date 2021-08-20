@@ -1,7 +1,7 @@
 {
-  "name": "ease-shop",
+  "name": "student-dashboard",
   "version": "1.0.0",
-  "description": "ease lamps",
+  "description": "student-dashboard",
   "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
